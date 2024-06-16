@@ -1,0 +1,161 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    
+    background-color:black;
+}
+/* #input-div input{
+
+} */
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    position: relative;
+}
+#main h1{
+   
+    color: white;
+    top: 0;
+    font-size: 5vw;
+}
+
+#container{
+    height: 80%;
+    width: 60%;
+    display: flex;
+   flex-direction: column;
+   
+    background: url(./images/img.jpeg);
+    border-radius: 15px;
+    padding: 1vw 1vw;
+  
+    align-items: center;
+    background-size: cover; 
+    overflow: hidden;
+    position: relative;
+
+    
+}
+
+#input-div {
+    display: flex;
+   
+    width: 60%;
+    justify-content: center;
+    position: fixed;
+   
+    
+}
+
+#input-div input{
+    background: url(images/sticky-note-line.svg) no-repeat scroll ;
+    background-size: 3.5vw 3.5vw;
+    background-position:left;
+    background-position-x: .5vw;
+    display: flex;
+    align-items: center;
+   width: 75%; 
+   border-radius: 15px;
+   height: 5vw;
+   background-color: whitesmoke;
+   border: 1px solid black;
+   padding: 0vw 5vw;
+   padding-right: 3.5vw; 
+   
+}
+#input-div input::placeholder{
+    text-align:center;
+    color: #00000077;
+}
+#input-div input:focus{
+    border: 1px solid #01050a;
+    box-shadow: 0 0 3px #010c16;
+    outline-offset: 0px;
+    outline: none;
+}
+
+#input-div button {
+    position: absolute; 
+  top: 1.3vw;
+  right: 4vw; 
+  background-color: transparent; 
+  
+  cursor: pointer;
+  font-size: 2vw;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+#input-div button:active {
+    
+    background-color: #bbb;
+    transform: translateY(2px); 
+  }
+
+  #lists-div{
+display: flex;
+flex-direction: column;
+
+width: 80%;
+height: 100%;
+border-radius: 15px;
+margin: 1vw 0vw;
+margin-top: 4.5vw;
+padding: 1vw 1vw;
+overflow-y:scroll;
+  }
+
+  .list{
+    width: 100%;
+    border-radius: 50px;
+    background-color: #000000d3;
+    margin: .5vw;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0vw;
+    color: whitesmoke;
+    
+  }
+
+  
+  .list .button{
+    display: flex;
+    align-items: center;
+   
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 3vw;
+    height: 3vw;
+    font-weight: 100;
+    margin-right: 1vw;
+    
+  }
+
+  .list label{
+    display: flex;
+    overflow:scroll;
+    width: 80%;
+
+  }
+  .list .button:active {
+    
+   
+    transform: translateY(2px); 
+  }
+
+  #bottom-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.327);
+    width: 100%;
+  }
